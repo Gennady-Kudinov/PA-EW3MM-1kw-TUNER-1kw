@@ -1,0 +1,1624 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 BC BC 4 1
+text CODE 0 22FA 22FA 2 1
+reset_vec CODE 0 0 0 6 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\protectx.X.production.obj
+cinit CODE 0 1EC4 1EC4 3C 1
+text0 CODE 0 1854 1854 B8 1
+text1 CODE 0 15FA 15FA D0 1
+text2 CODE 0 201A 201A 30 1
+text3 CODE 0 1C1A 1C1A 7C 1
+text4 CODE 0 DAC DAC 282 1
+text5 CODE 0 22B0 22B0 16 1
+text6 CODE 0 1796 1796 BE 1
+text7 CODE 0 688 688 3E6 1
+text8 CODE 0 2176 2176 26 1
+text9 CODE 0 1FAE 1FAE 36 1
+nvCOMRAM COMRAM 1 57 57 2 1
+text10 CODE 0 1DCA 1DCA 54 1
+text11 CODE 0 1B9A 1B9A 80 1
+text12 CODE 0 1C96 1C96 6C 1
+text13 CODE 0 1E1E 1E1E 54 1
+text14 CODE 0 20A8 20A8 2A 1
+text15 CODE 0 22E6 22E6 A 1
+text16 CODE 0 A6E A6E 33E 1
+text17 CODE 0 11A0 11A0 15C 1
+text18 CODE 0 1F3C 1F3C 3A 1
+text19 CODE 0 102E 102E 172 1
+text20 CODE 0 1520 1520 DA 1
+text21 CODE 0 2126 2126 28 1
+text22 CODE 0 1E72 1E72 52 1
+text23 CODE 0 16CA 16CA CC 1
+text24 CODE 0 219C 219C 26 1
+text25 CODE 0 227C 227C 1A 1
+text26 CODE 0 2228 2228 1C 1
+text27 CODE 0 143A 143A E6 1
+text28 CODE 0 22C6 22C6 10 1
+text29 CODE 0 2244 2244 1C 1
+text30 CODE 0 207A 207A 2E 1
+text31 CODE 0 190C 190C B2 1
+text32 CODE 0 1F76 1F76 38 1
+text33 CODE 0 220A 220A 1E 1
+text34 CODE 0 214E 214E 28 1
+text35 CODE 0 1A6C 1A6C 98 1
+text36 CODE 0 1D68 1D68 62 1
+text37 CODE 0 1D02 1D02 66 1
+text38 CODE 0 1F00 1F00 3C 1
+text39 CODE 0 2296 2296 1A 1
+text40 CODE 0 20D2 20D2 2A 1
+text41 CODE 0 2260 2260 1C 1
+text42 CODE 0 21C2 21C2 26 1
+text43 CODE 0 1B04 1B04 96 1
+text44 CODE 0 12FC 12FC 13E 1
+text45 CODE 0 1FE4 1FE4 36 1
+text46 CODE 0 19BE 19BE AE 1
+text47 CODE 0 204A 204A 30 1
+text49 CODE 0 20FC 20FC 2A 1
+text50 CODE 0 22F0 22F0 A 1
+text51 CODE 0 21E8 21E8 22 1
+text52 CODE 0 22D6 22D6 10 1
+nvBANK0 BANK0 1 D9 D9 1C 1
+cstackCOMRAM COMRAM 1 1 1 45 1
+cstackBANK0 BANK0 1 F5 F5 6 1
+temp COMRAM 1 59 59 1 1
+bssBANK0 BANK0 1 60 60 79 1
+intcode CODE 0 8 8 B4 1
+smallconst SMALLCONST 0 600 600 88 1
+idataBANK0 CODE 0 22FC 22FC 1 1
+eeprom_data EEDATA 0 F00000 F00000 20 1
+dataBANK0 BANK0 1 FB FB 1 1
+bssCOMRAM COMRAM 1 46 46 11 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM FC-5FF 1
+SFR F00-FFF 1
+BANK0 FC-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 6-7 1
+CONST C0-5FF 1
+CONST 22FD-7FFF 1
+STACK FC-5FF 1
+SMALLCONST 22FD-7FFF 1
+CODE 6-7 1
+CODE C0-5FF 1
+CODE 22FD-7FFF 1
+BIGRAM 5A-5F 1
+BIGRAM FC-5FF 1
+COMRAM 5A-5F 1
+EEDATA F00020-F000FF 1
+MEDIUMCONST 22FD-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\protectx.X.production.obj
+8 intcode CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+8 intcode CODE >45:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+14 intcode CODE >49:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+1A intcode CODE >51:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+1E intcode CODE >52:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22 intcode CODE >54:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+2A intcode CODE >56:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+36 intcode CODE >58:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+3C intcode CODE >60:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+66 intcode CODE >62:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+6A intcode CODE >63:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+70 intcode CODE >66:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+7E intcode CODE >69:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+86 intcode CODE >71:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+8A intcode CODE >74:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+92 intcode CODE >76:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+AA intcode CODE >77:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+AC intcode CODE >79:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22D6 text52 CODE >2:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22D8 text52 CODE >4:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22DA text52 CODE >5:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22DE text52 CODE >6:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22E0 text52 CODE >7:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22E2 text52 CODE >8:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21E8 text51 CODE >25:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21EA text51 CODE >28:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21EE text51 CODE >30:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21F0 text51 CODE >31:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21F2 text51 CODE >32:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21F4 text51 CODE >34:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21F8 text51 CODE >36:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+21FC text51 CODE >37:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+2200 text51 CODE >38:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+2204 text51 CODE >40:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22F0 text50 CODE >10:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22F2 text50 CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22F4 text50 CODE >13:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22F6 text50 CODE >15:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20FC text49 CODE >17:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20FE text49 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+2102 text49 CODE >20:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+211C text49 CODE >21:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+2122 text49 CODE >23:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+204A text47 CODE >3:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+204E text47 CODE >5:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+2058 text47 CODE >7:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+2062 text47 CODE >8:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+2064 text47 CODE >9:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+206A text47 CODE >11:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+2076 text47 CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19BE text46 CODE >14:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19C0 text46 CODE >17:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19CE text46 CODE >18:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19DC text46 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19EA text46 CODE >20:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+19F8 text46 CODE >22:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A06 text46 CODE >23:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A14 text46 CODE >24:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A22 text46 CODE >25:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A32 text46 CODE >27:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A44 text46 CODE >28:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A56 text46 CODE >29:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1A68 text46 CODE >30:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1FE4 text45 CODE >60:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1FE8 text45 CODE >62:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1FF0 text45 CODE >63:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1FF2 text45 CODE >65:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1FF4 text45 CODE >66:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+200E text45 CODE >63:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2016 text45 CODE >68:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+12FC text44 CODE >6:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+12FE text44 CODE >8:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1308 text44 CODE >9:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1314 text44 CODE >10:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1322 text44 CODE >11:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1330 text44 CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+133E text44 CODE >13:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+134C text44 CODE >15:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+137E text44 CODE >16:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+13AA text44 CODE >17:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+13D8 text44 CODE >18:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1402 text44 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1428 text44 CODE >20:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1436 text44 CODE >21:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B04 text43 CODE >24:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B06 text43 CODE >26:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B3A text43 CODE >28:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B48 text43 CODE >30:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B56 text43 CODE >31:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B70 text43 CODE >32:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B74 text43 CODE >35:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B80 text43 CODE >36:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B8C text43 CODE >37:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B96 text43 CODE >38:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+21C2 text42 CODE >70:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+21C6 text42 CODE >72:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+21C8 text42 CODE >74:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+21CA text42 CODE >75:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+21DC text42 CODE >72:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+21E4 text42 CODE >77:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2260 text41 CODE >194:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+2262 text41 CODE >196:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+2268 text41 CODE >197:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+2274 text41 CODE >198:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+227A text41 CODE >199:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20D2 text40 CODE >299:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20D4 text40 CODE >301:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20D8 text40 CODE >302:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20DA text40 CODE >304:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20F0 text40 CODE >302:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+20F8 text40 CODE >306:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+2296 text39 CODE >113:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2298 text39 CODE >115:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+229C text39 CODE >116:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+229E text39 CODE >118:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22A0 text39 CODE >119:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22A2 text39 CODE >120:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22AA text39 CODE >121:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22AC text39 CODE >122:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F00 text38 CODE >133:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F02 text38 CODE >135:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F0A text38 CODE >136:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F0C text38 CODE >137:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F18 text38 CODE >138:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F1A text38 CODE >139:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F26 text38 CODE >140:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F28 text38 CODE >141:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F34 text38 CODE >142:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1F36 text38 CODE >143:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D02 text37 CODE >5:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D04 text37 CODE >7:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D14 text37 CODE >9:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D2C text37 CODE >11:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D44 text37 CODE >13:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D5C text37 CODE >14:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D62 text37 CODE >16:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D66 text37 CODE >17:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1D68 text36 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1D6A text36 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1D6E text36 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1D88 text36 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1D8E text36 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1DA8 text36 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1DAE text36 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1DB0 text36 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1DC4 text36 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftge.c
+1A6C text35 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1A6E text35 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1A7A text35 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1A82 text35 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1A86 text35 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1A8E text35 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AA2 text35 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AA6 text35 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AAE text35 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AB6 text35 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AC8 text35 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1ACC text35 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AD4 text35 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AE0 text35 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AE2 text35 CODE >80:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AE4 text35 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AE8 text35 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AEC text35 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AF0 text35 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AF2 text35 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+1AFE text35 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
+214E text34 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwtoft.c
+2150 text34 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwtoft.c
+2172 text34 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwtoft.c
+220A text33 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftneg.c
+220C text33 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftneg.c
+2214 text33 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftneg.c
+2218 text33 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftneg.c
+2224 text33 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftneg.c
+1F76 text32 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fabs.c
+1F78 text32 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fabs.c
+1F7C text32 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fabs.c
+1F9C text32 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fabs.c
+1FA8 text32 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fabs.c
+190C text31 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+190E text31 CODE >24:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1912 text31 CODE >26:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1914 text31 CODE >27:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1918 text31 CODE >29:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+191E text31 CODE >30:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1922 text31 CODE >32:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1924 text31 CODE >33:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1926 text31 CODE >35:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1928 text31 CODE >36:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+192A text31 CODE >37:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+192C text31 CODE >39:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1936 text31 CODE >40:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+193E text31 CODE >42:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+197C text31 CODE >43:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+198E text31 CODE >33:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1996 text31 CODE >45:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1998 text31 CODE >46:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+199E text31 CODE >49:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19A8 text31 CODE >51:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19AC text31 CODE >52:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19B0 text31 CODE >56:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19B2 text31 CODE >24:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19B6 text31 CODE >57:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+19B8 text31 CODE >58:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+207A text30 CODE >96:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+207C text30 CODE >98:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2080 text30 CODE >99:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2084 text30 CODE >101:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2086 text30 CODE >102:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2088 text30 CODE >104:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+208C text30 CODE >106:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2092 text30 CODE >107:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+209A text30 CODE >109:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+20A2 text30 CODE >110:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+20A4 text30 CODE >111:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2244 text29 CODE >125:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2246 text29 CODE >127:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+224A text29 CODE >129:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2254 text29 CODE >130:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+225A text29 CODE >131:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22C6 text28 CODE >86:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22C8 text28 CODE >88:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22CA text28 CODE >89:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22CC text28 CODE >90:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22CE text28 CODE >91:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22D0 text28 CODE >93:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+22D2 text28 CODE >94:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+143A text27 CODE >199:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+143C text27 CODE >204:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+143E text27 CODE >207:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+144C text27 CODE >209:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1458 text27 CODE >211:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1464 text27 CODE >213:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1478 text27 CODE >215:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+148A text27 CODE >217:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+148E text27 CODE >219:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+149C text27 CODE >221:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14A8 text27 CODE >223:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14AC text27 CODE >225:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14B4 text27 CODE >228:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14B8 text27 CODE >230:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14BC text27 CODE >232:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14C0 text27 CODE >233:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14CC text27 CODE >234:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14D8 text27 CODE >236:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14DC text27 CODE >238:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14DE text27 CODE >239:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14F2 text27 CODE >241:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14F2 text27 CODE >243:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+14F4 text27 CODE >244:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+150E text27 CODE >247:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+150E text27 CODE >249:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1510 text27 CODE >250:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1514 text27 CODE >252:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+151A text27 CODE >254:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2228 text26 CODE >79:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+222A text26 CODE >81:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2230 text26 CODE >82:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2238 text26 CODE >83:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2240 text26 CODE >84:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+227C text25 CODE >2:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2280 text25 CODE >4:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2282 text25 CODE >5:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2286 text25 CODE >6:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2288 text25 CODE >7:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+228A text25 CODE >8:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+228C text25 CODE >9:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+228E text25 CODE >10:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2290 text25 CODE >11:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2292 text25 CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+219C text24 CODE >77:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+219E text24 CODE >79:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+21A8 text24 CODE >80:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+21B4 text24 CODE >81:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+21BE text24 CODE >82:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+16CA text23 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+16CC text23 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+16E6 text23 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+16F0 text23 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+171A text23 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+171C text23 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+171E text23 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+172C text23 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1730 text23 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1734 text23 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+173C text23 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1748 text23 CODE >61:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+174E text23 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1758 text23 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1762 text23 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1764 text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+176C text23 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1770 text23 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1780 text23 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1790 text23 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fttol.c
+1E72 text22 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E74 text22 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E78 text22 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E7A text22 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E84 text22 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E86 text22 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1E9C text22 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+1EC0 text22 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lltoft.c
+2126 text21 CODE >32:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+212A text21 CODE >35:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2142 text21 CODE >36:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+214A text21 CODE >37:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1520 text20 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1522 text20 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+153A text20 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+153C text20 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1556 text20 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+155E text20 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1564 text20 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1568 text20 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+156C text20 CODE >74:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1570 text20 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1572 text20 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1574 text20 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1576 text20 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+1578 text20 CODE >105:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+158C text20 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+159C text20 CODE >107:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15AC text20 CODE >114:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15B8 text20 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15BC text20 CODE >126:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15C4 text20 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15C6 text20 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15C8 text20 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15D0 text20 CODE >156:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+15F4 text20 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftmul.c
+102E text19 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1030 text19 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1044 text19 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1058 text19 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+106E text19 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+107C text19 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1094 text19 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10A2 text19 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10A8 text19 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10AA text19 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10AC text19 CODE >99:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10AE text19 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10B0 text19 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10B2 text19 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10B4 text19 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10B6 text19 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10B8 text19 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10C0 text19 CODE >110:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10C8 text19 CODE >111:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10CA text19 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10DE text19 CODE >114:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10E8 text19 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10EA text19 CODE >113:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10F2 text19 CODE >117:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+10FA text19 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1102 text19 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1104 text19 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1118 text19 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1120 text19 CODE >126:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1122 text19 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1128 text19 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+112C text19 CODE >131:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1132 text19 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+113A text19 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+113C text19 CODE >134:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1140 text19 CODE >136:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1146 text19 CODE >137:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+114E text19 CODE >138:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1150 text19 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1152 text19 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+115E text19 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1162 text19 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1168 text19 CODE >143:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1170 text19 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1174 text19 CODE >146:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+119A text19 CODE >148:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
+1F3C text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftsub.c
+1F3E text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftsub.c
+1F46 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftsub.c
+1F4A text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftsub.c
+1F72 text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftsub.c
+11A0 text17 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11A2 text17 CODE >138:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11BA text17 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11C2 text17 CODE >143:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11C2 text17 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11CE text17 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11EC text17 CODE >146:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11F4 text17 CODE >147:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+11FE text17 CODE >148:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+1202 text17 CODE >151:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+122C text17 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+1254 text17 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+127C text17 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+12A2 text17 CODE >155:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+12CA text17 CODE >156:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+12CE text17 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+12F6 text17 CODE >159:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcsqrt.c
+A6E text16 CODE >47:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+A70 text16 CODE >51:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+A82 text16 CODE >52:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+B3C text16 CODE >53:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+B4E text16 CODE >54:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C08 text16 CODE >56:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C1A text16 CODE >57:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C2C text16 CODE >58:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C3C text16 CODE >59:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C4C text16 CODE >61:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+C5E text16 CODE >62:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D18 text16 CODE >63:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D2A text16 CODE >65:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D3C text16 CODE >66:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D48 text16 CODE >67:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D54 text16 CODE >68:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D60 text16 CODE >69:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D6C text16 CODE >70:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D78 text16 CODE >71:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D84 text16 CODE >72:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D90 text16 CODE >73:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+D9C text16 CODE >74:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+DA8 text16 CODE >75:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+22E6 text15 CODE >10:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22E8 text15 CODE >12:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22EA text15 CODE >13:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+22EC text15 CODE >15:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20A8 text14 CODE >17:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20AA text14 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20AE text14 CODE >20:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20C8 text14 CODE >21:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+20CE text14 CODE >23:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/usart.h
+1E1E text13 CODE >254:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E20 text13 CODE >256:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E22 text13 CODE >258:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E26 text13 CODE >259:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E2A text13 CODE >260:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E2E text13 CODE >261:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E30 text13 CODE >263:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E34 text13 CODE >265:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E36 text13 CODE >266:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E3C text13 CODE >268:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E48 text13 CODE >270:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E54 text13 CODE >272:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E58 text13 CODE >273:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E5A text13 CODE >276:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E60 text13 CODE >263:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E68 text13 CODE >279:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E6C text13 CODE >280:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1E6E text13 CODE >281:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1C96 text12 CODE >283:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1C9A text12 CODE >285:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1C9E text12 CODE >287:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CA0 text12 CODE >289:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CB6 text12 CODE >290:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CCC text12 CODE >291:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CE2 text12 CODE >292:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CE6 text12 CODE >294:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CF2 text12 CODE >287:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CFA text12 CODE >296:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1CFC text12 CODE >297:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1B9A text11 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1B9C text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BA4 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BAE text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BB2 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BB4 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BC0 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BC2 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BCA text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BD4 text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BE6 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BF6 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1BF8 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1C02 text11 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1C06 text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1C06 text11 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1C16 text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+1DCA text10 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DCC text10 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DD0 text10 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DD6 text10 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DDA text10 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DDC text10 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DE4 text10 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DE6 text10 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DEE text10 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DF4 text10 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1DFE text10 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E06 text10 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E08 text10 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E0E text10 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E12 text10 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E12 text10 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1E1A text10 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1FAE text9 CODE >14:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FB2 text9 CODE >18:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FB6 text9 CODE >19:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FBA text9 CODE >20:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FBC text9 CODE >21:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FBE text9 CODE >22:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FC2 text9 CODE >23:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FC4 text9 CODE >24:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FC8 text9 CODE >25:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FCC text9 CODE >26:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FCE text9 CODE >27:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FDA text9 CODE >28:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FDC text9 CODE >29:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+1FE0 text9 CODE >30:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2176 text8 CODE >39:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2178 text8 CODE >41:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+2188 text8 CODE >42:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+219A text8 CODE >43:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/eep.h
+688 text7 CODE >201:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+68A text7 CODE >206:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+68E text7 CODE >208:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+722 text7 CODE >209:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+7B6 text7 CODE >210:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+84A text7 CODE >212:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+862 text7 CODE >213:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+87A text7 CODE >214:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+892 text7 CODE >215:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+8AA text7 CODE >216:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+8C2 text7 CODE >217:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+8DA text7 CODE >218:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+904 text7 CODE >219:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+91C text7 CODE >220:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+934 text7 CODE >221:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+94C text7 CODE >222:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+964 text7 CODE >223:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+97C text7 CODE >224:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+994 text7 CODE >225:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+9AC text7 CODE >226:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+9C4 text7 CODE >227:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+9DC text7 CODE >228:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+9F4 text7 CODE >229:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A0C text7 CODE >231:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A16 text7 CODE >233:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A1A text7 CODE >234:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A1A text7 CODE >236:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A1C text7 CODE >237:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A22 text7 CODE >240:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A2E text7 CODE >242:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A34 text7 CODE >243:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A42 text7 CODE >244:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A58 text7 CODE >247:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+A6A text7 CODE >251:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1796 text6 CODE >130:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1798 text6 CODE >132:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+179A text6 CODE >133:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17A0 text6 CODE >134:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17AE text6 CODE >136:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17B2 text6 CODE >138:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17B6 text6 CODE >141:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17C2 text6 CODE >147:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17C8 text6 CODE >149:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17CC text6 CODE >150:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17D6 text6 CODE >151:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17DE text6 CODE >154:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17E2 text6 CODE >156:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17E6 text6 CODE >159:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17EE text6 CODE >161:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17F2 text6 CODE >162:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+17FC text6 CODE >163:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1802 text6 CODE >165:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1806 text6 CODE >166:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+180A text6 CODE >170:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1812 text6 CODE >172:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1814 text6 CODE >173:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1818 text6 CODE >174:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+181C text6 CODE >175:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1826 text6 CODE >176:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1830 text6 CODE >180:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+183A text6 CODE >182:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+183E text6 CODE >183:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1842 text6 CODE >184:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1848 text6 CODE >185:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+184E text6 CODE >190:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+22B0 text5 CODE >40:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+22B2 text5 CODE >43:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+22BA text5 CODE >44:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+22BC text5 CODE >45:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+22C2 text5 CODE >46:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DAC text4 CODE >50:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DAE text4 CODE >52:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DB0 text4 CODE >54:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DBA text4 CODE >55:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DBE text4 CODE >57:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DCE text4 CODE >58:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DDA text4 CODE >60:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DE0 text4 CODE >63:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DE4 text4 CODE >65:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+DEA text4 CODE >68:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E02 text4 CODE >70:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E38 text4 CODE >71:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E50 text4 CODE >72:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E58 text4 CODE >73:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E60 text4 CODE >74:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E6A text4 CODE >75:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E72 text4 CODE >79:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E84 text4 CODE >80:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E96 text4 CODE >82:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E96 text4 CODE >85:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+E9A text4 CODE >87:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+EA0 text4 CODE >90:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+EB8 text4 CODE >92:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+EEE text4 CODE >93:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F06 text4 CODE >94:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F0E text4 CODE >95:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F16 text4 CODE >96:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F22 text4 CODE >99:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F34 text4 CODE >100:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F34 text4 CODE >103:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F3A text4 CODE >105:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F5A text4 CODE >106:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+F72 text4 CODE >108:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+FDA text4 CODE >109:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+FF2 text4 CODE >110:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+FFA text4 CODE >111:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+FFE text4 CODE >112:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1004 text4 CODE >117:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+100A text4 CODE >119:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1010 text4 CODE >121:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1022 text4 CODE >122:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1028 text4 CODE >126:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/nextion.h
+1C1A text3 CODE >145:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C1C text3 CODE >147:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C1E text3 CODE >149:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C22 text3 CODE >151:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C2A text3 CODE >152:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C44 text3 CODE >156:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C52 text3 CODE >158:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C58 text3 CODE >159:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C5C text3 CODE >165:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C72 text3 CODE >167:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C76 text3 CODE >168:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C78 text3 CODE >172:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C80 text3 CODE >174:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C8C text3 CODE >175:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+1C90 text3 CODE >177:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+201A text2 CODE >179:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+201C text2 CODE >183:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2020 text2 CODE >184:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+202E text2 CODE >186:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2032 text2 CODE >187:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2034 text2 CODE >190:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2040 text2 CODE >191:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2042 text2 CODE >192:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+2044 text2 CODE >193:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/digital.h
+15FA text1 CODE >32:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+15FC text1 CODE >34:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1600 text1 CODE >35:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1606 text1 CODE >36:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1608 text1 CODE >38:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+160C text1 CODE >39:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1610 text1 CODE >41:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1618 text1 CODE >42:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1628 text1 CODE >44:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+162E text1 CODE >47:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+164E text1 CODE >48:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1694 text1 CODE >49:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1698 text1 CODE >51:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+16BA text1 CODE >53:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+16C4 text1 CODE >55:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/adc.h
+1854 text0 CODE >71:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1856 text0 CODE >73:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1858 text0 CODE >74:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+185A text0 CODE >76:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+185E text0 CODE >77:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1860 text0 CODE >79:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1864 text0 CODE >80:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1868 text0 CODE >82:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+186C text0 CODE >83:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1870 text0 CODE >84:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1874 text0 CODE >85:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1876 text0 CODE >86:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+187A text0 CODE >88:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1884 text0 CODE >89:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+188E text0 CODE >91:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1892 text0 CODE >92:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1896 text0 CODE >93:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+189A text0 CODE >95:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+189E text0 CODE >97:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18A2 text0 CODE >99:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18A6 text0 CODE >101:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18AA text0 CODE >103:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18AC text0 CODE >105:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18AE text0 CODE >106:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18B0 text0 CODE >107:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18B2 text0 CODE >109:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18B6 text0 CODE >110:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18BA text0 CODE >112:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18C0 text0 CODE >114:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18CC text0 CODE >115:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18D2 text0 CODE >116:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18D4 text0 CODE >117:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18DA text0 CODE >119:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18E8 text0 CODE >121:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18EC text0 CODE >123:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18F0 text0 CODE >124:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18F4 text0 CODE >128:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18FA text0 CODE >129:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+18FE text0 CODE >131:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1902 text0 CODE >133:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1906 text0 CODE >134:D:\_AMATEUR_\_AMPLIFIER\_MOSFET\_MY2\protect\pic18f458_X_8.1/main.c
+1EC4 cinit CODE >1212:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EC4 cinit CODE >1214:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EC4 cinit CODE >1217:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EC4 cinit CODE >1357:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EC6 cinit CODE >1358:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EC8 cinit CODE >1359:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ECA cinit CODE >1360:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ECC cinit CODE >1361:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ECE cinit CODE >1362:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ED0 cinit CODE >1363:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ED2 cinit CODE >1364:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1ED6 cinit CODE >1368:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EDA cinit CODE >1369:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EDC cinit CODE >1370:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EDC cinit CODE >1371:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EDE cinit CODE >1372:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EE0 cinit CODE >1373:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EE2 cinit CODE >1376:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EE6 cinit CODE >1377:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EE8 cinit CODE >1378:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EE8 cinit CODE >1379:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EEA cinit CODE >1380:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EEC cinit CODE >1381:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EEE cinit CODE >1387:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EEE cinit CODE >1389:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EF0 cinit CODE >1390:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EF2 cinit CODE >1392:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EF4 cinit CODE >1393:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EF6 cinit CODE >1394:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EF8 cinit CODE >1395:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EFA cinit CODE >1396:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+1EFC cinit CODE >1397:C:\Users\EW3MM\AppData\Local\Temp\sa8o.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_PTT_OFF 2296 0 CODE 0 text39 dist/default/production\protectx.X.production.obj
+__size_of_DelayMs 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\protectx.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\protectx.X.production.obj
+__Hspace_0 F00020 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hspace_1 FC 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\protectx.X.production.obj
+isr@rx 4 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\protectx.X.production.obj
+__end_of_CreateBuffTX 1B9A 0 CODE 0 text43 dist/default/production\protectx.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+__Heeprom_data F00020 0 EEDATA 0 eeprom_data dist/default/production\protectx.X.production.obj
+__end_of_RXstartTIMER 22E6 0 CODE 0 text52 dist/default/production\protectx.X.production.obj
+?_ADC 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+EEsetupRead@lW F9 0 BANK0 1 cstackBANK0 dist/default/production\protectx.X.production.obj
+EEsetupRead@pW F5 0 BANK0 1 cstackBANK0 dist/default/production\protectx.X.production.obj
+EEsetupRead@rW F7 0 BANK0 1 cstackBANK0 dist/default/production\protectx.X.production.obj
+_PTT_read 2244 0 CODE 0 text29 dist/default/production\protectx.X.production.obj
+_max_curr E3 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_max_tFAN DF 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_max_temp E1 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_max_volt E5 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\protectx.X.production.obj
+_Beep 2228 0 CODE 0 text26 dist/default/production\protectx.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATE F8D 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR0 FD6 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR1 FCE 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR2 FCC 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+_band 57 0 COMRAM 1 nvCOMRAM dist/default/production\protectx.X.production.obj
+_curr 4C 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_elpf 6C 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_fabs 1F76 0 CODE 0 text32 dist/default/production\protectx.X.production.obj
+_freq 48 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_frwd 50 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_logo ED 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_main 1854 0 CODE 0 text0 dist/default/production\protectx.X.production.obj
+_maxf 8E 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_refl 4E 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_sqrt 11A0 0 CODE 0 text17 dist/default/production\protectx.X.production.obj
+_temp 4A 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_volt 82 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+btemp 59 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+_EEsetupRead A6E 0 CODE 0 text16 dist/default/production\protectx.X.production.obj
+___ftadd@f1 D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftadd@f2 10 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+start BC 0 CODE 0 init C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+__end_of_ADCmeasure 1A6C 0 CODE 0 text46 dist/default/production\protectx.X.production.obj
+_SetBand 1F00 0 CODE 0 text38 dist/default/production\protectx.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___ftsub 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_Beep 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_fabs 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_sqrt 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\protectx.X.production.obj
+__cntErrataNOP_C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj 1 0 ABS 0 - C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+__end_of_PTT_ON 20A8 0 CODE 0 text30 dist/default/production\protectx.X.production.obj
+__end_of_PTT_read 2260 0 CODE 0 text29 dist/default/production\protectx.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_RXstopTIMER 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\protectx.X.production.obj
+__Hpowerup BC 0 CODE 0 powerup dist/default/production\protectx.X.production.obj
+sqrt@a 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+sqrt@i 28 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+sqrt@q 29 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+sqrt@x 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+sqrt@z 25 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftge@ff1 13 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftge@ff2 16 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+ttemp5 5A 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+ttemp6 5D 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+ttemp7 61 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+_FreqMeasure 190C 0 CODE 0 text31 dist/default/production\protectx.X.production.obj
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\protectx.X.production.obj
+__size_ofi2_RXstopTIMER 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_ofi2_RXrestart 2126 0 CODE 0 text49 dist/default/production\protectx.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+intlevel0 22FA 0 CODE 0 text C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+intlevel1 22FA 0 CODE 0 text C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+intlevel2 22FA 0 CODE 0 text C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+intlevel3 22FA 0 CODE 0 text C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\protectx.X.production.obj
+FreqMeasure@jj 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\protectx.X.production.obj
+wtemp8 5A 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_RecieveError 21E8 0 CODE 0 text51 dist/default/production\protectx.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_LCDpageSelect 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_writeEEPROM 1FAE 0 CODE 0 text9 dist/default/production\protectx.X.production.obj
+_ProtectCheck 143A 0 CODE 0 text27 dist/default/production\protectx.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\protectx.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\protectx.X.production.obj
+__end_of_ReadStatusFromLCD 1854 0 CODE 0 text6 dist/default/production\protectx.X.production.obj
+__CFG_WDTPS$128 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___ftmul@f1 D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftmul@f2 10 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftneg@f1 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of_EEmbandRead 21C2 0 CODE 0 text24 dist/default/production\protectx.X.production.obj
+__size_of_ConvertNumber 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_DelayMs 21E8 0 CODE 0 text42 dist/default/production\protectx.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+DelayMs@ms 6 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+LCDversionSend@rep 12 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_ofi2_RXstopTIMER 22FA 0 CODE 0 text50 dist/default/production\protectx.X.production.obj
+DelayS@sec 7 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_EECON1bits FA6 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_SendStatusToLCD 102E 0 CODE 0 text4 dist/default/production\protectx.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\protectx.X.production.obj
+__end_of___ftge 1DCA 0 CODE 0 text36 dist/default/production\protectx.X.production.obj
+__end_of_LCDpageSelect 1D02 0 CODE 0 text12 dist/default/production\protectx.X.production.obj
+_rpeak_old 74 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_EECON1 FA6 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_EECON2 FA7 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_EEDATA FA8 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_DelayS 1FE4 0 CODE 0 text45 dist/default/production\protectx.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\protectx.X.production.obj
+___ftsub@f1 19 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftsub@f2 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___fttol@f1 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_LCDversionSend 20D2 0 CODE 0 text40 dist/default/production\protectx.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\protectx.X.production.obj
+__size_of_RecieveError 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\protectx.X.production.obj
+__Hintcodelo BC 0 CODE 0 intcodelo dist/default/production\protectx.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_ProtectCheck 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_waitAckFromLCD 1E1E 0 CODE 0 text13 dist/default/production\protectx.X.production.obj
+__end_of___ftadd 11A0 0 CODE 0 text19 dist/default/production\protectx.X.production.obj
+__end_of___ftmul 15FA 0 CODE 0 text20 dist/default/production\protectx.X.production.obj
+__end_of___ftneg 2228 0 CODE 0 text33 dist/default/production\protectx.X.production.obj
+__end_of___ftsub 1F76 0 CODE 0 text18 dist/default/production\protectx.X.production.obj
+__end_of___fttol 1796 0 CODE 0 text23 dist/default/production\protectx.X.production.obj
+__end_of___lldiv 1C1A 0 CODE 0 text11 dist/default/production\protectx.X.production.obj
+__end_of___lwdiv 1E1E 0 CODE 0 text10 dist/default/production\protectx.X.production.obj
+__end_of_ConvertNumber 143A 0 CODE 0 text44 dist/default/production\protectx.X.production.obj
+__size_of_BandDecode 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_INTCON FF2 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_Tramsmitt 22C6 0 CODE 0 text5 dist/default/production\protectx.X.production.obj
+__size_of_PttHoldControl 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_Tramsmitt 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___lwdiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+writeEEPROM@data 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\protectx.X.production.obj
+__cntErrataNOP_dist/default/production\protectx.X.production.obj B9 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_RecieveError 220A 0 CODE 0 text51 dist/default/production\protectx.X.production.obj
+___lldiv@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lintcodelo BC 0 CODE 0 intcodelo dist/default/production\protectx.X.production.obj
+__end_of_ProtectCheck 1520 0 CODE 0 text27 dist/default/production\protectx.X.production.obj
+start_initialization 1EC4 0 CODE 0 cinit dist/default/production\protectx.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\protectx.X.production.obj
+_SendStatusToLCD DAC 0 CODE 0 text4 dist/default/production\protectx.X.production.obj
+_Tramsmitt 22B0 0 CODE 0 text5 dist/default/production\protectx.X.production.obj
+_PTT_ON 207A 0 CODE 0 text30 dist/default/production\protectx.X.production.obj
+__size_of_DelayS 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___lldiv@dividend 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+CreateBuffTX@data D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_ReadStatusFromLCD 1796 0 CODE 0 text6 dist/default/production\protectx.X.production.obj
+_FanControl 1C1A 0 CODE 0 text3 dist/default/production\protectx.X.production.obj
+__end_of_LCDversionSend 20FC 0 CODE 0 text40 dist/default/production\protectx.X.production.obj
+__pcstackBANK0 F5 0 BANK0 1 cstackBANK0 dist/default/production\protectx.X.production.obj
+_STKPTR FFC 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___fttol@exp1 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___fttol@lval 39 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___lltoft@c D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of_waitAckFromLCD 1E72 0 CODE 0 text13 dist/default/production\protectx.X.production.obj
+__end_of_SlowControl 16CA 0 CODE 0 text1 dist/default/production\protectx.X.production.obj
+___ftpack 1A6C 0 CODE 0 text35 dist/default/production\protectx.X.production.obj
+__size_of_ADCmeasure 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___ftpack@arg 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftpack@exp 8 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_WDTCON FD1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_writeEEPROM16 2176 0 CODE 0 text8 dist/default/production\protectx.X.production.obj
+__size_ofi2_RXrestart 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_volt_view 80 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__end_of___ftpack 1B04 0 CODE 0 text35 dist/default/production\protectx.X.production.obj
+_cpeak_old 72 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_readEEPROM 227C 0 CODE 0 text25 dist/default/production\protectx.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\protectx.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\protectx.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\protectx.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\protectx.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\protectx.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\protectx.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\protectx.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\protectx.X.production.obj
+ProtectCheck@bpt 66 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\protectx.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\protectx.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\protectx.X.production.obj
+__end_of_RXrestart 20D2 0 CODE 0 text14 dist/default/production\protectx.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\protectx.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\protectx.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\protectx.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\protectx.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\protectx.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\protectx.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\protectx.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\protectx.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\protectx.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\protectx.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\protectx.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\protectx.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\protectx.X.production.obj
+___lwdiv@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\protectx.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\protectx.X.production.obj
+__size_of_RXrestart 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+_RXstopTIMER 22E6 0 CODE 0 text15 dist/default/production\protectx.X.production.obj
+___lltoft 1E72 0 CODE 0 text22 dist/default/production\protectx.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\protectx.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\protectx.X.production.obj
+___lwtoft 214E 0 CODE 0 text34 dist/default/production\protectx.X.production.obj
+__size_of_PTT_ON 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\protectx.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\protectx.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\protectx.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\protectx.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\protectx.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\protectx.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\protectx.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\protectx.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\protectx.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\protectx.X.production.obj
+___ftadd@exp1 18 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftadd@exp2 17 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftadd@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\protectx.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\protectx.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\protectx.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\protectx.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\protectx.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\protectx.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\protectx.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\protectx.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\protectx.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\protectx.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\protectx.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\protectx.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\protectx.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\protectx.X.production.obj
+writeEEPROM@address 6 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__size_of_PTT_OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_EEmbandRead 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\protectx.X.production.obj
+__end_of___lltoft 1EC4 0 CODE 0 text22 dist/default/production\protectx.X.production.obj
+SetupMode@lW 22 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+SetupMode@pW 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+SetupMode@rW 20 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\protectx.X.production.obj
+ConvertNumber@number 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of___lwtoft 2176 0 CODE 0 text34 dist/default/production\protectx.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_EEsetupRead DAC 0 CODE 0 text16 dist/default/production\protectx.X.production.obj
+readEEPROM16@ee B 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_volt_old 7E 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_RXrestart 20A8 0 CODE 0 text14 dist/default/production\protectx.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\protectx.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\protectx.X.production.obj
+__Hinit C0 0 CODE 0 init dist/default/production\protectx.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\protectx.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\protectx.X.production.obj
+__Htemp 5A 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\protectx.X.production.obj
+readEEPROM@addr 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\protectx.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\protectx.X.production.obj
+__Linit BC 0 CODE 0 init dist/default/production\protectx.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\protectx.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\protectx.X.production.obj
+__Ltemp 59 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\protectx.X.production.obj
+__pnvBANK0 D9 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+___ftge 1D68 0 CODE 0 text36 dist/default/production\protectx.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\protectx.X.production.obj
+int$flags 59 0 COMRAM 1 temp dist/default/production\protectx.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\protectx.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\protectx.X.production.obj
+_ADC 204A 0 CODE 0 text47 dist/default/production\protectx.X.production.obj
+__S0 F00020 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__S1 FC 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_err 54 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_fan 8D 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_isr 8 0 CODE 0 intcode dist/default/production\protectx.X.production.obj
+_lcd 55 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_med 8C 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_ptt 56 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_rxb 53 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_tmp 60 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_txb 87 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__end_of_FanControl 1C96 0 CODE 0 text3 dist/default/production\protectx.X.production.obj
+readEEPROM16@addr D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_ptt_hold EB 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_beeper EE 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__pnvCOMRAM 57 0 COMRAM 1 nvCOMRAM dist/default/production\protectx.X.production.obj
+_readEEPROM16 2126 0 CODE 0 text21 dist/default/production\protectx.X.production.obj
+_bstate 8A 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_buffRX CF 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_buffTX 8F 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_bypass 58 0 COMRAM 1 nvCOMRAM dist/default/production\protectx.X.production.obj
+__size_of_SendStatusToLCD 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_cvtout 68 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__size_of_SetBand 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_FreqMeasure 19BE 0 CODE 0 text31 dist/default/production\protectx.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\protectx.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\protectx.X.production.obj
+__end_of_readEEPROM 2296 0 CODE 0 text25 dist/default/production\protectx.X.production.obj
+_fanptt F2 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_frtout 6A 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__end_of_ADC 207A 0 CODE 0 text47 dist/default/production\protectx.X.production.obj
+__end_of_isr BC 0 CODE 0 intcode dist/default/production\protectx.X.production.obj
+__end_of_writeEEPROM 1FE4 0 CODE 0 text9 dist/default/production\protectx.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\protectx.X.production.obj
+_DelayMs 21C2 0 CODE 0 text42 dist/default/production\protectx.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\protectx.X.production.obj
+___lldiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_ptt_htimer 88 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\protectx.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\protectx.X.production.obj
+__pdataBANK0 FB 0 BANK0 1 dataBANK0 dist/default/production\protectx.X.production.obj
+__activetblptr 1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\protectx.X.production.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\protectx.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\protectx.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\protectx.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\protectx.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\protectx.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\protectx.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\protectx.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\protectx.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\protectx.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\protectx.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\protectx.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\protectx.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\protectx.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\protectx.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\protectx.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\protectx.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\protectx.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\protectx.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\protectx.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\protectx.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\protectx.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\protectx.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\protectx.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\protectx.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\protectx.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\protectx.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\protectx.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\protectx.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production\protectx.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\protectx.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\protectx.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\protectx.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production\protectx.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production\protectx.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/default/production\protectx.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/default/production\protectx.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production\protectx.X.production.obj
+__Htext46 0 0 ABS 0 text46 dist/default/production\protectx.X.production.obj
+__Htext47 0 0 ABS 0 text47 dist/default/production\protectx.X.production.obj
+__Htext49 0 0 ABS 0 text49 dist/default/production\protectx.X.production.obj
+__Htext50 0 0 ABS 0 text50 dist/default/production\protectx.X.production.obj
+__Htext51 0 0 ABS 0 text51 dist/default/production\protectx.X.production.obj
+__Htext52 0 0 ABS 0 text52 dist/default/production\protectx.X.production.obj
+_bstate_old 89 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__size_of_writeEEPROM16 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_err_old FB 0 BANK0 1 dataBANK0 dist/default/production\protectx.X.production.obj
+__size_of_readEEPROM16 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_SetupMode A6E 0 CODE 0 text7 dist/default/production\protectx.X.production.obj
+_biasdel F3 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__ptext10 1DCA 0 CODE 0 text10 dist/default/production\protectx.X.production.obj
+__ptext11 1B9A 0 CODE 0 text11 dist/default/production\protectx.X.production.obj
+__ptext12 1C96 0 CODE 0 text12 dist/default/production\protectx.X.production.obj
+__ptext13 1E1E 0 CODE 0 text13 dist/default/production\protectx.X.production.obj
+__ptext14 20A8 0 CODE 0 text14 dist/default/production\protectx.X.production.obj
+__ptext15 22E6 0 CODE 0 text15 dist/default/production\protectx.X.production.obj
+__ptext16 A6E 0 CODE 0 text16 dist/default/production\protectx.X.production.obj
+__ptext17 11A0 0 CODE 0 text17 dist/default/production\protectx.X.production.obj
+__ptext18 1F3C 0 CODE 0 text18 dist/default/production\protectx.X.production.obj
+__ptext19 102E 0 CODE 0 text19 dist/default/production\protectx.X.production.obj
+__ptext20 1520 0 CODE 0 text20 dist/default/production\protectx.X.production.obj
+__ptext21 2126 0 CODE 0 text21 dist/default/production\protectx.X.production.obj
+__ptext22 1E72 0 CODE 0 text22 dist/default/production\protectx.X.production.obj
+__ptext23 16CA 0 CODE 0 text23 dist/default/production\protectx.X.production.obj
+__ptext24 219C 0 CODE 0 text24 dist/default/production\protectx.X.production.obj
+__ptext25 227C 0 CODE 0 text25 dist/default/production\protectx.X.production.obj
+__ptext26 2228 0 CODE 0 text26 dist/default/production\protectx.X.production.obj
+__ptext27 143A 0 CODE 0 text27 dist/default/production\protectx.X.production.obj
+__ptext28 22C6 0 CODE 0 text28 dist/default/production\protectx.X.production.obj
+__ptext29 2244 0 CODE 0 text29 dist/default/production\protectx.X.production.obj
+__ptext30 207A 0 CODE 0 text30 dist/default/production\protectx.X.production.obj
+__ptext31 190C 0 CODE 0 text31 dist/default/production\protectx.X.production.obj
+__ptext32 1F76 0 CODE 0 text32 dist/default/production\protectx.X.production.obj
+__ptext33 220A 0 CODE 0 text33 dist/default/production\protectx.X.production.obj
+__ptext34 214E 0 CODE 0 text34 dist/default/production\protectx.X.production.obj
+__ptext35 1A6C 0 CODE 0 text35 dist/default/production\protectx.X.production.obj
+__ptext36 1D68 0 CODE 0 text36 dist/default/production\protectx.X.production.obj
+__ptext37 1D02 0 CODE 0 text37 dist/default/production\protectx.X.production.obj
+__ptext38 1F00 0 CODE 0 text38 dist/default/production\protectx.X.production.obj
+__ptext39 2296 0 CODE 0 text39 dist/default/production\protectx.X.production.obj
+__ptext40 20D2 0 CODE 0 text40 dist/default/production\protectx.X.production.obj
+__ptext41 2260 0 CODE 0 text41 dist/default/production\protectx.X.production.obj
+__ptext42 21C2 0 CODE 0 text42 dist/default/production\protectx.X.production.obj
+__ptext43 1B04 0 CODE 0 text43 dist/default/production\protectx.X.production.obj
+__ptext44 12FC 0 CODE 0 text44 dist/default/production\protectx.X.production.obj
+__ptext45 1FE4 0 CODE 0 text45 dist/default/production\protectx.X.production.obj
+__ptext46 19BE 0 CODE 0 text46 dist/default/production\protectx.X.production.obj
+__ptext47 204A 0 CODE 0 text47 dist/default/production\protectx.X.production.obj
+__ptext49 20FC 0 CODE 0 text49 dist/default/production\protectx.X.production.obj
+__ptext50 22F0 0 CODE 0 text50 dist/default/production\protectx.X.production.obj
+__ptext51 21E8 0 CODE 0 text51 dist/default/production\protectx.X.production.obj
+__ptext52 22D6 0 CODE 0 text52 dist/default/production\protectx.X.production.obj
+__CFG_OSCS$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+writeEEPROM16@addr 8 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+writeEEPROM16@data A 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+___ftadd 102E 0 CODE 0 text19 dist/default/production\protectx.X.production.obj
+___ftmul 1520 0 CODE 0 text20 dist/default/production\protectx.X.production.obj
+___ftneg 220A 0 CODE 0 text33 dist/default/production\protectx.X.production.obj
+___ftsub 1F3C 0 CODE 0 text18 dist/default/production\protectx.X.production.obj
+___fttol 16CA 0 CODE 0 text23 dist/default/production\protectx.X.production.obj
+__size_of_SetupMode 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+ProtectCheck@bp 84 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+___lldiv 1B9A 0 CODE 0 text11 dist/default/production\protectx.X.production.obj
+___lwdiv 1DCA 0 CODE 0 text10 dist/default/production\protectx.X.production.obj
+_temp_old 7C 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\protectx.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\protectx.X.production.obj
+__CFG_BORV$27 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_BOR$ON 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+?_fabs 10 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?_sqrt 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\protectx.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\protectx.X.production.obj
+?___ftpack 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of_PTT_OFF 22B0 0 CODE 0 text39 dist/default/production\protectx.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATCbits F8B 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATDbits F8C 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_LATEbits F8D 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_SendUSART 227C 0 CODE 0 text41 dist/default/production\protectx.X.production.obj
+ADC@ch 9 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__size_of_SlowControl 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_reldel F4 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__size_of_SendUSART 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_rx_end 86 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\protectx.X.production.obj
+_sensor EC 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+___lwdiv@divisor 7 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\protectx.X.production.obj
+_SetupMode 688 0 CODE 0 text7 dist/default/production\protectx.X.production.obj
+__end_of_readEEPROM16 214E 0 CODE 0 text21 dist/default/production\protectx.X.production.obj
+_tx_len 52 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+__end_of_writeEEPROM16 219C 0 CODE 0 text8 dist/default/production\protectx.X.production.obj
+___lwtoft@c D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+stackhi 5FF 0 ABS 0 - C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+stacklo FC 0 ABS 0 - C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+_lpferrC DB 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_lpferrP DD 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_lpferrR D9 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\protectx.X.production.obj
+?___lltoft D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\protectx.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\protectx.X.production.obj
+?___lwtoft D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_SendUSART 2260 0 CODE 0 text41 dist/default/production\protectx.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_SetBand 1F3C 0 CODE 0 text38 dist/default/production\protectx.X.production.obj
+__pbssCOMRAM 46 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+___ftmul@sign 17 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?_readEEPROM16 6 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\protectx.X.production.obj
+ConvertNumber@conv 9 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\protectx.X.production.obj
+waitAckFromLCD@ack 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+i2_RXrestart 20FC 0 CODE 0 text49 dist/default/production\protectx.X.production.obj
+end_of_initialization 1EEE 0 CODE 0 cinit dist/default/production\protectx.X.production.obj
+_PttHoldControl 201A 0 CODE 0 text2 dist/default/production\protectx.X.production.obj
+__size_of_EEsetupRead 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\protectx.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\protectx.X.production.obj
+___lwdiv@dividend 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___ftadd D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___ftmul D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___ftneg 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___ftsub 19 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___fttol 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___lldiv 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+?___lwdiv 5 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec dist/default/production\protectx.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\protectx.X.production.obj
+LCDpageSelect@tt 12 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\protectx.X.production.obj
+CreateBuffTX@str C 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_fpeak_old 76 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\protectx.X.production.obj
+__pcinit 1EC4 0 CODE 0 cinit dist/default/production\protectx.X.production.obj
+___lltoft@exp 15 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+FreqMeasure@err 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+FreqMeasure@tmr 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__ptext0 1854 0 CODE 0 text0 dist/default/production\protectx.X.production.obj
+__ptext1 15FA 0 CODE 0 text1 dist/default/production\protectx.X.production.obj
+__ptext2 201A 0 CODE 0 text2 dist/default/production\protectx.X.production.obj
+__ptext3 1C1A 0 CODE 0 text3 dist/default/production\protectx.X.production.obj
+__ptext4 DAC 0 CODE 0 text4 dist/default/production\protectx.X.production.obj
+__ptext5 22B0 0 CODE 0 text5 dist/default/production\protectx.X.production.obj
+__ptext6 1796 0 CODE 0 text6 dist/default/production\protectx.X.production.obj
+__ptext7 688 0 CODE 0 text7 dist/default/production\protectx.X.production.obj
+__ptext8 2176 0 CODE 0 text8 dist/default/production\protectx.X.production.obj
+__ptext9 1FAE 0 CODE 0 text9 dist/default/production\protectx.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\protectx.X.production.obj
+__CFG_STVR$ON 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_EEmbandRead 219C 0 CODE 0 text24 dist/default/production\protectx.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\protectx.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\protectx.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\protectx.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\protectx.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\protectx.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\protectx.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\protectx.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\protectx.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\protectx.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\protectx.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\protectx.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\protectx.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\protectx.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\protectx.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\protectx.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\protectx.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\protectx.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\protectx.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\protectx.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\protectx.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\protectx.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\protectx.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\protectx.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\protectx.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\protectx.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\protectx.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\protectx.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production\protectx.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\protectx.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\protectx.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\protectx.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production\protectx.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production\protectx.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/production\protectx.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/production\protectx.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production\protectx.X.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/production\protectx.X.production.obj
+__Ltext47 0 0 ABS 0 text47 dist/default/production\protectx.X.production.obj
+__Ltext49 0 0 ABS 0 text49 dist/default/production\protectx.X.production.obj
+__Ltext50 0 0 ABS 0 text50 dist/default/production\protectx.X.production.obj
+__Ltext51 0 0 ABS 0 text51 dist/default/production\protectx.X.production.obj
+__Ltext52 0 0 ABS 0 text52 dist/default/production\protectx.X.production.obj
+ProtectCheck@beepPer 64 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\EW3MM\AppData\Local\Temp\sa8o.obj
+__size_of_FreqMeasure 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_LCDversionSend 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lpowerup BC 0 CODE 0 powerup dist/default/production\protectx.X.production.obj
+__Leeprom_data F00000 0 EEDATA 0 eeprom_data dist/default/production\protectx.X.production.obj
+__size_of_FanControl 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_waitAckFromLCD 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\protectx.X.production.obj
+_band_old 8B 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__CFG_WDT$ON 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\protectx.X.production.obj
+__end_of_RXstopTIMER 22F0 0 CODE 0 text15 dist/default/production\protectx.X.production.obj
+_BandDecode 1D02 0 CODE 0 text37 dist/default/production\protectx.X.production.obj
+__size_of_writeEEPROM 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\protectx.X.production.obj
+___ftmul@exp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of__initialization 1EEE 0 CODE 0 cinit dist/default/production\protectx.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\protectx.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_readEEPROM 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_PttHoldControl 204A 0 CODE 0 text2 dist/default/production\protectx.X.production.obj
+_max_pwr E9 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_max_ref E7 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__pidataBANK0 22FC 0 CODE 0 idataBANK0 dist/default/production\protectx.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\protectx.X.production.obj
+__CFG_OSC$HSPLL 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___ftpack@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_CreateBuffTX 1B04 0 CODE 0 text43 dist/default/production\protectx.X.production.obj
+PttHoldControl@t 85 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_RXstartTIMER 22D6 0 CODE 0 text52 dist/default/production\protectx.X.production.obj
+___lldiv@quotient D 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+LCDpageSelect@page 13 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__end_of_SwitchOFF 22D6 0 CODE 0 text28 dist/default/production\protectx.X.production.obj
+__CFG_PWRT$ON 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__end_of_Beep 2244 0 CODE 0 text26 dist/default/production\protectx.X.production.obj
+__end_of_fabs 1FAE 0 CODE 0 text32 dist/default/production\protectx.X.production.obj
+__end_of_main 190C 0 CODE 0 text0 dist/default/production\protectx.X.production.obj
+__end_of_sqrt 12FC 0 CODE 0 text17 dist/default/production\protectx.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\protectx.X.production.obj
+__size_of_SwitchOFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_CMCON FB4 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_EEADR FA9 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTA F80 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_PORTE F84 0 ABS 0 - dist/default/production\protectx.X.production.obj
+writeEEPROM@INTCON_SAVE 7 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+_RCREG FAE 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_T3CON FB1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR3H FB3 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TMR3L FB2 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\protectx.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\protectx.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\protectx.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\protectx.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\protectx.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\protectx.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_aband F1 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_cpeak 78 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_fpeak 46 0 COMRAM 1 bssCOMRAM dist/default/production\protectx.X.production.obj
+_hystF EF 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+_hystT F0 0 BANK0 1 nvBANK0 dist/default/production\protectx.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+i2_RXstopTIMER 22F0 0 CODE 0 text50 dist/default/production\protectx.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_rpeak 7A 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_tempM 70 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+_voltM 6E 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__size_of_PTT_read 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+_ADCmeasure 19BE 0 CODE 0 text46 dist/default/production\protectx.X.production.obj
+_CCP1CON FBD 0 ABS 0 - dist/default/production\protectx.X.production.obj
+___fttol@sign1 38 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__size_of_ReadStatusFromLCD 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_ADC 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\protectx.X.production.obj
+_LCDpageSelect 1C96 0 CODE 0 text12 dist/default/production\protectx.X.production.obj
+__initialization 1EC4 0 CODE 0 cinit dist/default/production\protectx.X.production.obj
+__end_of_BandDecode 1D68 0 CODE 0 text37 dist/default/production\protectx.X.production.obj
+_SwitchOFF 22C6 0 CODE 0 text28 dist/default/production\protectx.X.production.obj
+SetupMode@eadr 24 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\protectx.X.production.obj
+__size_of_CreateBuffTX 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\protectx.X.production.obj
+__Hsmallconst 688 0 SMALLCONST 0 smallconst dist/default/production\protectx.X.production.obj
+_SlowControl 15FA 0 CODE 0 text1 dist/default/production\protectx.X.production.obj
+__end_of_DelayS 201A 0 CODE 0 text45 dist/default/production\protectx.X.production.obj
+__size_of_RXstartTIMER 0 0 ABS 0 - dist/default/production\protectx.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\protectx.X.production.obj
+fabs@d 10 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\protectx.X.production.obj
+_ConvertNumber 12FC 0 CODE 0 text44 dist/default/production\protectx.X.production.obj
+__Hintcode BC 0 CODE 0 intcode dist/default/production\protectx.X.production.obj
+___ftmul@f3_as_product 18 0 COMRAM 1 cstackCOMRAM dist/default/production\protectx.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text7 0 688 688 1C75 1
+cstackCOMRAM 1 1 1 59 1
+reset_vec 0 0 0 6 1
+bssBANK0 1 60 60 9C 1
+intcode 0 8 8 B8 1
+smallconst 0 600 600 88 1
+eeprom_data 0 F00000 F00000 20 1
+config 0 300000 300000 E 1
